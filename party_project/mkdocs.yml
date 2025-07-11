@@ -1,0 +1,38 @@
+site_name: party-world                    #имя вашего сайта
+site_author: Vexer                        #ваше имя
+
+nav:                                      #расположение всех ваших файлов
+  - Party animals: index.md 
+  - Мясоеды: 
+    - Акула: src/managing/shork.md
+    - Динозавр: src/managing/dino.md
+    - Собака: src/managing/dog.md
+    - Кошка: src/managing/cat.md
+  - Травонямы:
+    - Утка: src/managing/duck.md
+    - Коровка: src/managing/cow.md
+  - Овощи: 
+    - Баклажанчик: src/managing/format.md
+  - Sosik: 
+    - Sosik: src/managing/sosik.md
+theme:
+  name: material
+  logo: 'src/img/12.jpg'                    #путь к лого вашего сайта
+  feature:
+    tabs: false
+  language: 'ru'
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.extra
+  - pymdownx.snippets:
+      base_path: docs/src
+
+plugins:
+  - search
+
+extra_css:
+  - 'stylesheets/extra-page-content.css'
+  - 'https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'
